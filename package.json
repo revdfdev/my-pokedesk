@@ -1,6 +1,9 @@
 {
   "name": "pokeapi",
   "version": "0.1.0",
+  "engines": {
+    "node": "12.16.1"
+  },
   "private": true,
   "proxy": "https://pokeapi.co/",
   "dependencies": {
