@@ -58,7 +58,6 @@ export default function pokemon(state = { ...initialState }, action) {
                 pokemons:[...state.pokemons, action.pokemon]
             }
         case EDIT_POKEMON_SUCCESS:
-            console.log(action.pokemon);
             //const pokemonIndex = state.pokemons.findIndex(pokemon => pokemon.id === action.pokemon.id);
             const index = state.pokemons.findIndex(pokemon => {
                 const ids = pokemon.url.split("/")

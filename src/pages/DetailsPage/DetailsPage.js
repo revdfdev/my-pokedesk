@@ -8,7 +8,6 @@ export class DetailsPage extends React.Component {
 
     componentDidMount() { 
         const { match, lookPokemonDesc } = this.props;
-        console.log(this.props.match.params.id)
         lookPokemonDesc(`${BASE_URL}/${match.params.id}/`)
         //lookPokemonDesc(url);
     }
@@ -24,8 +23,6 @@ export class DetailsPage extends React.Component {
           height: pokemonDesc.height,
           abilities: pokemonDesc.abilities ? pokemonDesc.abilities : []
         };
-
-        console.log(JSON.stringify(pokemonDesc, null, 3));
 
         return (
           <Container

@@ -14,7 +14,6 @@ import {
 } from "reactstrap";
 
 export function DescBox({ pokemon }) {
-    console.log("Descbox", JSON.stringify(pokemon.abilities, null, 3));
     return (
       <Container fluid>
         <Row>

@@ -24,7 +24,6 @@ export async function getSinglePokemon(pokemons) {
             pokemons.map(pokemon => {
                 return axios.get(pokemon.url);
         }));
-        console.log(JSON.stringify(responses));
         return responses;
     } catch(e) {
         throw e;

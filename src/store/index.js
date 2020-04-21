@@ -6,7 +6,11 @@ import logger from 'redux-logger';
 
 const sagaMiddleware = createSagaMiddleware();
 
-export const middleware = [logger, sagaMiddleware];
+export const middleware = [sagaMiddleware];
+
+if (process.env.NODE_ENV !== "production") {
+    middleware = [...middleware, logger]
+}
 
 export default function configureStore(preloadedState) {
     const store = createStore(
