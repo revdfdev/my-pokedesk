@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const api = axios.create({
-    baseURL: process.env.REACT_APP_BASE_URL,
+    baseURL: 'https://pokeapi.co/',
     timeout: 20000,
     headers: {
         'Accept': 'application/json',
